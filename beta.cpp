@@ -30,11 +30,16 @@ public class HelloWorld
             Console.WriteLine ("Hello " + username1 + " What do you like to do?");
             Console.WriteLine ("Amount of Money: "+ money);
             Console.WriteLine ();
-            Console.WriteLine ("1 to withdraw or 2 to deposit or 3 ");
+            Console.WriteLine ("1 to withdraw or 2 to deposit or 3 to leave");
+            string ans = Console.ReadLine();
+            
+            
             break;
         }
         else{
-           Console.WriteLine ("Wrong Usernmae or Password"); 
+            Console.WriteLine ();
+            Console.WriteLine ("Wrong Username or Password");
+            Console.WriteLine ();
         }
         
         
@@ -43,5 +48,4 @@ public class HelloWorld
         
         }
             
-    } 
-        
+    }
