@@ -6,7 +6,7 @@ public class HelloWorld
         
     public static void Main(string[] args)
     {
-        Console.WriteLine ("ATM");
+        Console.WriteLine ("BANK");
         Console.WriteLine ();
         Console.WriteLine ("Register");
         Console.Write("Name: ");
@@ -16,7 +16,7 @@ public class HelloWorld
         
         Console.WriteLine ();
         
-        for(int i = 5; i > 0; i++){
+        for(int i = 1; i > 0; i++){
         Console.WriteLine ("Login");
         Console.Write("Name: ");
         string username1 = Console.ReadLine();
@@ -26,13 +26,51 @@ public class HelloWorld
         if((username,password)==(username1,password1))
         {
             int money=0;
-            Console.WriteLine ();
+            for(int l = 0; l <= money; i++){
+            
+            Console.WriteLine("");
             Console.WriteLine ("Hello " + username1 + " What do you like to do?");
-            Console.WriteLine ("Amount of Money: "+ money);
+            Console.WriteLine ("Amount of Money: "+  money);
             Console.WriteLine ();
             Console.WriteLine ("1 to withdraw or 2 to deposit or 3 to leave");
+            Console.Write("Put your answer here: ");
             string ans = Console.ReadLine();
             
+        if((Convert.ToInt32(ans)) == 1 ){
+            
+            if((Convert.ToInt32(money))==0){
+                Console.WriteLine();
+                Console.WriteLine("Insufficient money");
+                continue;
+                
+            }else
+                Console.WriteLine();
+                Console.WriteLine("How much do you like to withdraw");
+                Console.Write(": ");
+            string withdraw=Console.ReadLine();
+            money= money - Convert.ToInt32(withdraw);
+            
+                continue;
+            }
+            
+        if((Convert.ToInt32(ans)) == 2 ){
+               Console.WriteLine();
+                Console.WriteLine("How much do you like to deposit");
+                Console.Write(": ");
+            int deposit = int.Parse(Console.ReadLine());
+              money= money + Convert.ToInt32(deposit);
+             
+                continue; 
+                
+            }
+            
+        if((Convert.ToInt32(ans)) == 3 ){
+            Console.WriteLine();
+            Console.WriteLine("Thank you for using me");
+            break;
+        }
+        
+            }
             
             break;
         }
