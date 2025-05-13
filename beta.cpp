@@ -66,7 +66,7 @@ public class HelloWorld
             
         if((Convert.ToInt32(ans)) == 3 ){
             Console.WriteLine();
-            Console.WriteLine("Thank you for using me");
+            Console.WriteLine("Thank you");
             break;
         }
         
