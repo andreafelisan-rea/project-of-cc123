@@ -1,3 +1,4 @@
+
 using System;
 
 public class HelloWorld
@@ -49,7 +50,7 @@ public class HelloWorld
                 Console.Write(": ");
             string withdraw=Console.ReadLine();
             
-            if((Convert.ToInt32(money))>(Convert.ToInt32(withdraw))){
+            if((Convert.ToInt32(money))>=(Convert.ToInt32(withdraw))){
             money= money - Convert.ToInt32(withdraw);
             
                 continue;
@@ -87,11 +88,8 @@ public class HelloWorld
             Console.WriteLine ();
         }
         
-        
         }
-        
         
         }
             
-    }
-      
+    }      
